@@ -20,16 +20,20 @@ import {RouterActive} from './router-active';
     providers: [],
     directives: [RouterActive],
     encapsulation: ViewEncapsulation.None,
-    styles: [require('./app.css')],
-    template: require('./app.template.html')
+    styles: [`${require('./app.styl')}`],
+    template: `
+    <div class="block">
+        <span class="block__element block__element__mod">aaaa</span>
+    </div>`
 })
-//@RouteConfig([
-//  { path: '/',      name: 'Index', component: Home, useAsDefault: true },
-//  { path: '/home',  name: 'Home',  component: Home },
-//  // Async load a component using Webpack's require with es6-promise-loader and webpack `require`
-//  { path: '/about', name: 'About', loader: () => require('es6-promise!./about')('About') },
-//])
+
 export class App {
     title = 'Angular App555';
     imageUrl = "http://lorempixel.com/400/200";
+
+    constructor() {
+        console.log('sss');
+
+        console.log('aaaa');
+    }
 }

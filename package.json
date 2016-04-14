@@ -127,7 +127,10 @@
     "webpack": "^1.12.14",
     "webpack-dev-server": "^1.14.1",
     "webpack-md5-hash": "^0.0.5",
-    "webpack-merge": "^0.8.4"
+    "webpack-merge": "^0.8.4",
+    "jade": "^1.11.0",
+    "jade-loader": "^0.8.0",
+    "stylus-loader": "^1.4.2"
   },
   "repository": {
     "type": "git",
